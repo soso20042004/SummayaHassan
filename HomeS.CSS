@@ -1,0 +1,278 @@
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #F0F4F4; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #587a67, #6d8477); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0d1c19;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0d1c19;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #2c5844;
+    color: #95bba6;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90vh;
+    padding-left: 50px;
+    background-image: url(SM22.jpg); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 4em; 
+    margin-bottom: 20px;
+    color: #082513; 
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #2d4e2b; 
+}
+
+.hero-content .button {
+    text-decoration: none;
+    background-color: #2c5844;
+    color: #95bba6;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-content .button:hover {
+    background-color: #F0E68C;
+    color: #2E4F4F;
+}
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-image: url('SM24.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-text {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #2E8B57;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    color: #2E8B57;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 10px;
+}
+/* المنتجات */
+.products {
+    background-image: url('SM25.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    color: #093429;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: contain; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    color: #2E8B57;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.1em;
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+.product-card button {
+    background-color: #2E8B57;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #3CB371;
+}
+    /* رأس صفحة "تواصل معنا" */
+.contact-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #edf7ed;
+    color: #2c5f2d;
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+}
+
+/* قسم التواصل */
+.contact-section {
+    background-image: url('SM26.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 50px;
+    height: 400px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%; 
+    color: #333;
+}
+
+.form-container h2 {
+    font-size: 2em;
+    color: #2E8B57;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #2E8B57;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3CB371;
+}
