@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public/Private Key Demo</title>
+</head>
+<body>
+    <h1>نموذج لتشفير وفك تشفير الرسائل</h1>
+    <p>أدخل رسالة:</p>
+    <textarea id="message" rows="4" cols="50"></textarea>
+    <br><br>
+    <button onclick="encryptMessage()">تشفير الرسالة</button>
+    <h3>الرسالة المشفرة:</h3>
+    <textarea id="encryptedMessage" rows="4" cols="50" readonly></textarea>
+    <br><br>
+    <button onclick="decryptMessage()">فك التشفير</button>
+    <h3>الرسالة الأصلية:</h3>
+    <textarea id="decryptedMessage" rows="4" cols="50" readonly></textarea>
+    <script src="encryption.js"></script>
+</body>
+</html>
