@@ -1,6 +1,6 @@
 let publicKey, privateKey;
 
-// إنشاء زوج المفاتيح
+
 async function generateKeys() {
     const keyPair = await window.crypto.subtle.generateKey(
         {
@@ -18,7 +18,6 @@ async function generateKeys() {
     console.log("تم إنشاء المفاتيح بنجاح!");
 }
 
-// تشفير الرسالة
 async function encryptMessage() {
     const message = document.getElementById("message").value;
     const encoder = new TextEncoder();
@@ -37,7 +36,7 @@ async function encryptMessage() {
     );
 }
 
-// فك التشفير
+
 async function decryptMessage() {
     const encryptedMessage = document.getElementById("encryptedMessage").value;
     const encryptedData = Uint8Array.from(atob(encryptedMessage), (c) =>
@@ -57,5 +56,4 @@ async function decryptMessage() {
     document.getElementById("decryptedMessage").value = originalMessage;
 }
 
-// توليد المفاتيح عند تحميل الصفحة
 generateKeys();
